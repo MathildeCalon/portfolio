@@ -1,0 +1,57 @@
+#banner {
+    display: flex;
+    background-color: #ffbd59;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    padding: 10px 0;
+}
+
+#titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 {
+    margin:0;
+}
+
+h1:hover, h2:hover {
+    color: red;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.navbar-link {
+    font-size: 1.4rem;
+}
+
+.navbar-link:hover {
+    transition: text-decoration 3s ease-in-out;
+    text-decoration: underline;
+    /* TODO : finir l'effet au survol */
+    cursor: pointer;
+}
+
+#avatar {
+  height: 90%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right:10px;
+}
+
+#avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
