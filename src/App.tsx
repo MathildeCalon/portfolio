@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import Presentation from './components/Presentation';
+import Parcours from './components/Parcours'
 import './App.css'
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
     <>
       <Router>
           <Routes>
-            <Route path="/" element={<Header/>}></Route>
-            <Route path="/parcours"></Route>
+            <Route path="/" element={<Presentation/>}></Route>
+            <Route path="/parcours" element={<Parcours/>}></Route>
             <Route path="/realisations"></Route>
             <Route path="/contact"></Route>
           </Routes>

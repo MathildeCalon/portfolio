@@ -1,0 +1,15 @@
+.life-step {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.step-dates {
+    font-size: 1.9rem;
+}
+
+.step-description {
+    display: flex;
+    flex-direction: column;
+}

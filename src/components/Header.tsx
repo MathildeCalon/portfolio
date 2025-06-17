@@ -6,7 +6,7 @@ export default function Presentation(){
         <>
             <div id='banner'>
                 <div id='avatar'>
-                    <img src='avatar_portfolio.png'></img>
+                    <img src='avatar_portfolio.png' alt='avatar de Mathilde'></img>
                 </div>
                 <div id='titles'>
                     <h1>Mathilde Calon</h1>
@@ -15,9 +15,9 @@ export default function Presentation(){
             </div>
 
             <div id='navbar'>
-                <div className='navbar-link'>Présentation</div>
-                <div className='navbar-link'>Parcours</div>
-                <div className='navbar-link'>Réalisations</div>
+                <a className='navbar-link' href='/'>Présentation</a>
+                <a className='navbar-link' href='/parcours'>Parcours</a>
+                <a className='navbar-link'>Réalisations</a>
 {/*                 <div className='navbar-link'>Contact</div> */}
             </div>
         </>

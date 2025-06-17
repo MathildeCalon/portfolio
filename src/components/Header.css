@@ -18,10 +18,6 @@ h1, h2 {
     margin:0;
 }
 
-h1:hover, h2:hover {
-    color: red;
-}
-
 #navbar {
     display: flex;
     justify-content: space-evenly;
@@ -29,14 +25,15 @@ h1:hover, h2:hover {
 }
 
 .navbar-link {
-    font-size: 1.4rem;
+    font-size: 1.4rem; 
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 5px 10px;
 }
 
 .navbar-link:hover {
-    transition: text-decoration 3s ease-in-out;
-    text-decoration: underline;
-    /* TODO : finir l'effet au survol */
-    cursor: pointer;
+  background-color: #ffbd59;
+  transition: background-color 500ms ease-in-out;
 }
 
 #avatar {
