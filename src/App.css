@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Sans';
 }
 
-.main-content {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +10,7 @@ body {
   margin: 3% 10%;
   background-color: white;
   padding: 10px;
+  position: relative;
 }
 
 h3 {
