@@ -10,6 +10,19 @@
   text-align: justify;
 }
 
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+
+.skills-type {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 .text-container {
   transition: opacity 0.3s ease;
 }
@@ -24,20 +37,6 @@
 
 .cards-container {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.link-container {
-  width: fit-content;
-  padding: 0 30px 30px 30px !important;
-}
-
-#links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  gap: 10px;
 }
 
 #skills {
@@ -51,4 +50,24 @@
 .skill-icon {
   width: 40px;
   height: auto;
+}
+
+#frontend {
+  margin-bottom: 15px;
+}
+
+#soft-skills {
+  width: 50%;
+}
+
+.soft-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+}
+
+.card#soft-skills{
+  justify-content: space-around;
 }

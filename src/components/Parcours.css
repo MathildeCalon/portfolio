@@ -1,3 +1,13 @@
+.game-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 3% 10%;
+  padding: 10px;
+  position: relative;
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -6,13 +16,13 @@
 
 .cards-container-parcours {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center; 
-    padding: 20px;
 }
 
 .life-step {
   position: relative;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   transition: transform 0.6s;
@@ -44,5 +54,25 @@
 }
 
 .step-description {
+    width:250px;
     transform: rotateY(180deg);
+    background-color: white;
+    font-size: 0.9rem;
+    padding-right: 15px;
+    border: solid 2px #27252a;
+    display: flex;
+    margin: auto;
+}
+
+.step-dates {
+  background-image: url('/fleurs.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.title-icon {
+    font-size: 2rem;
 }

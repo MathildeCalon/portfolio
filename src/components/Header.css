@@ -1,11 +1,10 @@
 #banner {
     display: flex;
     background-color: #ffbd59;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
     height: 20vh;
-    padding: 10px 0;
+    padding: 10px 40px;
 }
 
 #titles {
@@ -51,4 +50,11 @@ h1, h2 {
   height: 100%;
   object-fit: cover;
   object-position: center top;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
