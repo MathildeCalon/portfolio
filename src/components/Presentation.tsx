@@ -1,83 +1,88 @@
 import { useState } from 'react';
-import Header from './Header';
+import SkillIcon from './SkillIcon';
 import './Presentation.css';
+import { ANGULAR, CSS3, DOCTRINE, HIBERNATE, HTML, JAVA, NODEJS, PHP, POSTGRESQL, REACT, SPRING, SYMFONY, TYPESCRIPT } from '../utils/IconMap';
 
-type Lang = 'fr' | "uk";
+type Lang = 'fr' | 'uk';
+
+const content: Record<Lang, { title: string; text: string; label: string }> = {
+    fr: {
+        title: "Fraîchement reconvertie et prête pour le sprint planning !",
+        label: "FR",
+        text: "Persévérante et curieuse, je suis impatiente de relever de nouveaux défis dans le domaine du développement. Bilingue en anglais, je suis à l'aise dans des environnements internationaux et je sais m'adapter rapidement aux nouvelles situations. Mon objectif est de contribuer efficacement à des projets dynamiques et collaboratifs. Oh, fun fact : je suis une grande fan d'escalade ! Que ce soit sur un mur d'escalade ou en milieu professionnel, j'adore atteindre de nouveaux sommets et repousser mes limites.",
+    },
+    uk: {
+        title: "Newly retrained and ready for sprint planning!",
+        label: "UK",
+        text: "I recently changed my career path and I'm ready for sprint planning! Persistent and curious by nature, I can't wait to tackle new development challenges. Fluent in English, I'm comfortable in international environments and can adapt quickly to new situations. My goal is to contribute effectively to dynamic and collaborative projects. More about myself: I'm a huge fan of rock climbing! On a climbing wall or in a professional environment, I love reaching new heights and pushing myself.",
+    }
+};
 
 export default function Presentation() {
-    const [language, setLanguage] = useState<Lang>("fr");
-    const lang: Record<Lang, string> = {
-        fr: "FR",
-        uk: "UK"
-    };
-
+    const [language, setLanguage] = useState<Lang>('fr');
     const [fade, setFade] = useState(false);
 
-    const texts: Record<Lang, string> = {
-        fr: "Persévérante et curieuse, je suis impatiente de relever de nouveaux défis dans le domaine du développement. Bilingue en anglais, je suis à l'aise dans des environnements internationaux et je sais m'adapter rapidement aux nouvelles situations. Mon objectif est de contribuer efficacement à des projets dynamiques et collaboratifs. Oh, fun fact : je suis une grande fan d'escalade ! Que ce soit sur un mur d'escalade ou en milieu professionnel, j'adore atteindre de nouveaux sommets et repousser mes limites.",
-        uk: "I recently changed my career path and I'm ready for sprint planning! Persistent and curious by nature, I can't wait to tackle new development challenges. Fluent in English, I'm comfortable in international environments and can adapt quickly to new situations. My goal is to contribute effectively to dynamic and collaborative projects. More about myself: I'm a huge fan of rock climbing! On a climbing wall or in a professional environment, I love reaching new heights and pushing myself."
-    };
-
     const toggleLanguage = () => {
+        const newLang = language === 'fr' ? 'uk' : 'fr';
         setFade(true);
         setTimeout(() => {
-            setLanguage((prevLanguage) => (prevLanguage === "fr" ? "uk" : "fr"));
+            setLanguage(newLang);
             setFade(false);
-        }, 300)
+        }, 300);
     };
 
     return (
         <>
-            < Header />
-
-            <div id='presentation' className='main-content'>
-                <div className='card'>
-                    <h3>Fraîchement reconvertie et prête pour le sprint planning !</h3>
-                    <div id='language' onClick={toggleLanguage} >{lang[language]}</div>
-                    <div id='text-presentation' className={`text-container ${fade ? "fade-out" : "fade-in"}`}>
-                        {texts[language]}
+            <div id="presentation" className="main-content">
+                <div className="card">
+                    <div className={`fade-wrapper ${fade ? 'fade-out' : 'fade-in'}`}>
+                        <h3>{content[language].title}</h3>
+                        <div id="text-presentation" className="text-container">
+                            {content[language].text}
+                        </div>
+                    </div>
+                    <div id="language" onClick={toggleLanguage}>
+                        {content[language].label}
                     </div>
                 </div>
+
 
                 <div className='cards-container'>
                     <div className='card'>
                         <h3>Compétences</h3>
-                        
+
                         <div id='skills'>
                             <div className='skills-type'>Frontend</div>
                             <div id='frontend' className='skills-container'>
-                                <img src='/icons/html-5.svg' alt="Logo html" className='skill-icon' />
-                                <img src='/icons/css-3.svg' alt="Logo CSS" className='skill-icon' />
-                                <img src='/icons/typescript-icon.svg' alt="Logo typescript" className='skill-icon' />
-                                
-                                <img src='/icons/react.svg' alt="Logo React" className='skill-icon' />
-                                <img src='/icons/angular.svg' alt="Logo angular" className='skill-icon' />
+                                <SkillIcon {...HTML} />
+                                <SkillIcon {...CSS3} />
+                                <SkillIcon {...TYPESCRIPT} />
+                                <SkillIcon {...REACT} />
+                                <SkillIcon {...ANGULAR} />
                             </div>
 
                             <div className='skills-type'>Backend</div>
                             <div id='backend' className='skills-container'>
-                                <img src='/icons/php.svg' alt="Logo php" className='skill-icon' />
-                                <img src='/icons/java.svg' alt="Logo java" className='skill-icon' />
-
-                                <img src='/icons/spring.svg' alt="Logo spring" className='skill-icon' />
-                                <img src='/icons/node.svg' alt="Logo node" className='skill-icon' />
-                                <img src='/icons/symfony.svg' alt="Logo symfony" className='skill-icon' />
-
-                                <img src='/icons/postgresql.svg' alt="Logo postgresql" className='skill-icon' />
-                                <img src='/icons/hibernate.svg' alt="Logo hibernate" className='skill-icon' />
-                                <img src='/icons/doctrine.svg' alt="Logo doctrine" className='skill-icon' />
+                                <SkillIcon {...PHP} />
+                                <SkillIcon {...JAVA} />
+                                <SkillIcon {...SPRING} />
+                                <SkillIcon {...NODEJS} />
+                                <SkillIcon {...SYMFONY} />
+                                <SkillIcon {...POSTGRESQL} />
+                                <SkillIcon {...HIBERNATE} />
+                                <SkillIcon {...DOCTRINE} />
                             </div>
                         </div>
                     </div>
 
                     <div className='card' id='soft-skills'>
-                    <h3>Soft skills</h3>
+                        <h3>Soft skills</h3>
                         <div className='soft-skills'>
-                            <div>Autonomie</div>
-                            <div>Logique</div>
-                            <div>Rigueur</div>
-                            <div>Curiosité</div>
-                            <div>Perséverance</div>
+                            <div><span className='fa-solid fa-battery-full' /> Autonomie</div>
+                            <div><span className='fa-solid fa-gears' /> Logique</div>
+                            <div><span className='fa-solid fa-glasses' /> Rigueur</div>
+                            <div><span className='fa-solid fa-magnifying-glass' /> Curiosité</div>
+                            <div><span className='fa-solid fa-hand-fist' /> Perséverance</div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,63 @@
+.cards-container-realisation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 50px;
+}
+
+.project-card {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #ffbd59;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    font-weight: bold;
+    height: 20px;
+}
+
+.project-description {
+    font-style: italic;
+    text-align: center;
+}
+
+.project-techno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px
+}
+
+.project-picture {
+    align-self: center;
+    height: 150px;
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+
+.project-picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}

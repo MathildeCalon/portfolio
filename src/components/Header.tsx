@@ -1,4 +1,5 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 export default function Presentation(){
 
@@ -23,9 +24,9 @@ export default function Presentation(){
             </div>
 
             <div id='navbar'>
-                <a className='navbar-link' href='/'>Présentation</a>
-                <a className='navbar-link' href='/parcours'>Parcours</a>
-                <a className='navbar-link' href='/realisations'>Réalisations</a>
+                <Link className='navbar-link' to='/'>Présentation</Link>
+                <Link className='navbar-link' to='/parcours'>Parcours</Link>
+                <Link className='navbar-link' to='/realisations'>Réalisations</Link>
 {/*                 <div className='navbar-link'>Contact</div> */}
             </div>
         </>

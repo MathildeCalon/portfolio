@@ -1,3 +1,7 @@
+#root {
+  flex: 1;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,4 +17,5 @@ body {
   min-height: 100vh;
   font-family: 'Noto Sans';
   color: #27252a;
+  font-family: 'Noto Sans';
 }

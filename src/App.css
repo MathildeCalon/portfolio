@@ -1,5 +1,11 @@
-body {
-  font-family: 'Noto Sans';
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.main-content {
+    padding-bottom: 20px;
 }
 
 .card {
@@ -19,6 +25,7 @@ h3 {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: inherit;
 }

@@ -1,33 +1,35 @@
 #banner {
-    display: flex;
-    background-color: #ffbd59;
-    justify-content: space-between;
-    align-items: center;
-    height: 20vh;
-    padding: 10px 40px;
+  display: flex;
+  background-color: #ffbd59;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 10px 40px;
 }
 
 #titles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1, h2 {
-    margin:0;
+h1,
+h2 {
+  margin: 0;
 }
 
 #navbar {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
 }
 
 .navbar-link {
-    font-size: 1.4rem; 
-    cursor: pointer;
-    border-radius: 15px;
-    padding: 5px 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px 10px;
 }
 
 .navbar-link:hover {
@@ -42,7 +44,7 @@ h1, h2 {
   border-radius: 50%;
   border: 3px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 #avatar img {

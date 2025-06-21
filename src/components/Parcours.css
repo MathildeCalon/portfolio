@@ -1,78 +1,99 @@
 .game-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 25px;
-  margin: 3% 10%;
-  padding: 10px;
-  position: relative;
-}
-
-.title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    border-radius: 25px;
+    margin: 3% 10%;
+    padding: 10px;
+    position: relative;
 }
 
 .cards-container-parcours {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center; 
+    justify-items: center;
 }
 
 .life-step {
-  position: relative;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
 .flip-card {
-  width: 300px;
-  height: 400px;
-  perspective: 1000px;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
 }
 
 .flip-card:hover .life-step {
-  transform: rotateY(180deg);
-}
-
-.step-dates,
-.step-description {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  border-radius: 10px;
-}
-
-.step-description {
-    width:250px;
     transform: rotateY(180deg);
-    background-color: white;
-    font-size: 0.9rem;
-    padding-right: 15px;
-    border: solid 2px #27252a;
-    display: flex;
-    margin: auto;
 }
 
 .step-dates {
-  background-image: url('/fleurs.avif');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-weight: bold;
-  font-size: 1.8rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-image: url('/fleurs.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.step-description {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotateY(180deg);
+    background-color: white;
+    font-size: 0.9rem;
+    border: solid 2px #27252a;
+    display: flex;
+    position: absolute;
+    text-align: center;
 }
 
 .title-icon {
+    box-sizing: border-box;
     font-size: 2rem;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.step-description-details {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10px;
+    height: 350px;
+    gap: 10px;
+}
+
+.description-details {
+    font-size: 0.8rem;
+}
+
+.skills-list {
+    text-align: left;
 }
