@@ -19,3 +19,20 @@ body {
   color: #27252a;
   font-family: 'Noto Sans';
 }
+
+h3 {
+  align-self: center;
+  font-size: 1.4rem;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width:800px) {
+  h3 {
+    text-align: center;
+  }
+}

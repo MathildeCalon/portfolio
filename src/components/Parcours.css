@@ -97,3 +97,16 @@
 .skills-list {
     text-align: left;
 }
+
+@media (max-width: 1100px){
+    .cards-container-parcours {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 960px) {
+    .cards-container-parcours {
+        grid-template-columns: none;
+        grid-auto-columns: none;
+    };
+}

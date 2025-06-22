@@ -17,6 +17,7 @@ export default function Realisations() {
         <div id='parcours' className='main-content'>
             <div className='title'>
                 <h3>Projets</h3>
+                <h4>Cliquez sur la carte pour accéder au projet</h4>
             </div>
 
             <div className='cards-container-realisation'>
@@ -33,6 +34,7 @@ export default function Realisations() {
                         <div className="project-techno">
                             <SkillIcon {...TYPESCRIPT} />
                             <SkillIcon {...REACT} />
+                            <SkillIcon {...NETLIFY} />
                         </div>
                     </div>
                 </a>

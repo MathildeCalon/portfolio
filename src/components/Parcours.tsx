@@ -18,9 +18,10 @@ export default function Parcours() {
                                     <span className='fa-solid fa-school' />
                                 </div>
                                 <div className='step-description-details'>
-                                    <div><strong>Baccalauréat Littéraire Européen</strong> : Anglais</div>
-                                    <div><strong>Licence Langues Etrangères Appliquées aux affaires</strong> : Anglais, Espagnol, Allemand, spécialité Traduction Spécialisée Multilingue</div>
-                                    <div><strong>Maîtrise Métiers du Lexique et de la Traduction</strong> : Anglais</div>
+                                    <div><strong>Baccalauréat Littéraire Européen</strong> à Boulogne-sur-mer : Anglais</div>
+                                    <div><strong>Licence Langues Etrangères Appliquées aux affaires</strong> à Lille : Anglais, Espagnol, Allemand, spécialité Traduction Spécialisée Multilingue</div>
+                                    <div><strong>Séjour de 6 mois à Londres</strong> : Anglais courant</div>
+                                    <div><strong>Maîtrise Métiers du Lexique et de la Traduction</strong> à Lille : Anglais</div>
                                 </div>
                             </div>
                         </div>
@@ -34,11 +35,12 @@ export default function Parcours() {
                                 </div>
                                 <div className='step-description-details'>
                                     <div><strong>Assistante commerciale chez SSL247</strong></div>
-                                    <div>Gestion des noms de domaine de tous les clients européens : vente, renouvellements, maintenance</div>
+                                    <div>Gestion des noms de domaine de tous les clients sur le marché européen : vente, renouvellements, maintenance</div>
                                     <div className='skills-list'>
                                         <div><span className='fa-solid fa-arrow-right' /> Autonomie
                                         </div>
                                         <div><span className='fa-solid fa-arrow-right' /> Rigueur</div>
+                                        <div><span className='fa-solid fa-arrow-right' /> Esprit d'équipe</div>
                                     </div></div>
                             </div>
 

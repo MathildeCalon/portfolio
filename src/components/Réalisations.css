@@ -1,6 +1,11 @@
+h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
 .cards-container-realisation {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     row-gap: 50px;
 }
@@ -60,4 +65,17 @@
     width: 100%;
     object-fit: cover;
     object-position: center top;
+}
+
+@media (max-width:1310px){
+    .cards-container-realisation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:960px){
+    .cards-container-realisation {
+        grid-template-columns: none;
+        grid-auto-columns: none;
+    }
 }

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Presentation from './components/Presentation';
 import Parcours from './components/Parcours'
-import './App.css'
+import './styles/App.css'
 import Realisations from './components/Realisations';
 
 function App() {

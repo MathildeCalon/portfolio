@@ -27,7 +27,6 @@ export default function Presentation(){
                 <Link className='navbar-link' to='/'>Présentation</Link>
                 <Link className='navbar-link' to='/parcours'>Parcours</Link>
                 <Link className='navbar-link' to='/realisations'>Réalisations</Link>
-{/*                 <div className='navbar-link'>Contact</div> */}
             </div>
         </>
     )

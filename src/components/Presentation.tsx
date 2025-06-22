@@ -48,10 +48,10 @@ export default function Presentation() {
 
 
                 <div className='cards-container'>
-                    <div className='card'>
+                    <div className='card skills'>
                         <h3>Compétences</h3>
 
-                        <div id='skills'>
+                        <div id='hard-skills'>
                             <div className='skills-type'>Frontend</div>
                             <div id='frontend' className='skills-container'>
                                 <SkillIcon {...HTML} />
@@ -75,7 +75,7 @@ export default function Presentation() {
                         </div>
                     </div>
 
-                    <div className='card' id='soft-skills'>
+                    <div className='card skills' id='soft-skills'>
                         <h3>Soft skills</h3>
                         <div className='soft-skills'>
                             <div><span className='fa-solid fa-battery-full' /> Autonomie</div>
