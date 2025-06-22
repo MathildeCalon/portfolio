@@ -36,13 +36,15 @@ export default function Presentation() {
             <div id="presentation" className="main-content">
                 <div className="card">
                     <div className={`fade-wrapper ${fade ? 'fade-out' : 'fade-in'}`}>
-                        <h3>{content[language].title}</h3>
+                        <div id='presentation-titles'>
+                            <h3>{content[language].title}</h3>
+                            <div id="language" onClick={toggleLanguage}>
+                            {content[language].label}
+                        </div>
+                    </div>
                         <div id="text-presentation" className="text-container">
                             {content[language].text}
                         </div>
-                    </div>
-                    <div id="language" onClick={toggleLanguage}>
-                        {content[language].label}
                     </div>
                 </div>
 

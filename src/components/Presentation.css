@@ -3,10 +3,16 @@ h3 {
   font-size: 1.4rem;
 }
 
+#presentation-titles {
+  display: flex;
+}
+
+#presentation-titles h3 {
+  width: 95%;
+  text-align: center;
+}
+
 #language {
-  position: absolute;
-  top: 10px;
-  right: 20px;
   cursor: pointer;
 }
 
@@ -20,7 +26,8 @@ h3 {
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
-
+  flex-wrap: wrap;
+  gap: 11px;
 }
 
 .skills-type {
