@@ -9,7 +9,7 @@ export default function Presentation(){
                 <div id='links'>
                     <a href='https://github.com/MathildeCalon' target='_blank'><span className='fa-brands fa-github' /> Github</a>
                     <a href='https://www.linkedin.com/in/mathildecalon/' target='_blank'><span className="fa-brands fa-linkedin" /> LinkedIn</a>
-                    <a href='mathilde-calon-cv' download><span className='fa-solid fa-file' /> CV</a>
+                    <a href='mathilde-calon-cv-2026' download><span className='fa-solid fa-file' /> CV</a>
                     <a href='lettre-recommandation-mathilde-calon.pdf' download><span className='fa-solid fa-star' /> Lettre de recommandation</a>
                 </div>
                 
