@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SkillIcon from './SkillIcon';
 import './Presentation.css';
-import { ANGULAR, CSS3, DOCTRINE, HIBERNATE, HTML, JAVA, NODEJS, PHP, POSTGRESQL, REACT, SPRING, SYMFONY, TYPESCRIPT } from '../utils/IconMap';
+import { ANGULAR, CSS3, DOCTRINE, GO, HIBERNATE, HTML, JAVA, NODEJS, PHP, POSTGRESQL, REACT, SPRING, SYMFONY, TYPESCRIPT } from '../utils/IconMap';
 
 type Lang = 'fr' | 'uk';
 
@@ -73,6 +73,7 @@ export default function Presentation() {
                                 <SkillIcon {...POSTGRESQL} />
                                 <SkillIcon {...HIBERNATE} />
                                 <SkillIcon {...DOCTRINE} />
+                                <SkillIcon {...GO} />
                             </div>
                         </div>
                     </div>
