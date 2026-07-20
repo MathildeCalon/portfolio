@@ -129,3 +129,21 @@ export const CSS3 = {
     alt: 'Logo CSS',
     title: 'CSS'
 }
+
+export const GO = {
+    src: '/icons/golang.svg',
+    alt: 'Logo GO',
+    title: 'GO'
+}
+
+export const TAILWIND = {
+    src: '/icons/tailwind-css.svg',
+    alt: 'Logo Tailwind',
+    title: 'Tailwind'
+}
+
+export const SQLITE = {
+    src: 'icons/sqlite.png',
+    alt: 'Logo SQLITE',
+    title: 'SQLite'
+}

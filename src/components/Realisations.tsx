@@ -9,7 +9,10 @@ import {
     HUBSPOT,
     NODEJS,
     EXPRESS,
-    EJS
+    EJS,
+    GO,
+    TAILWIND,
+    SQLITE
 } from '../utils/IconMap';
 
 export default function Realisations() {
@@ -21,6 +24,27 @@ export default function Realisations() {
             </div>
 
             <div className='cards-container-realisation'>
+
+                <a href='https://www.casaam.fr' target='_blank'>
+                    <div className='project-card'>
+                        <div className="project-header">
+                            <div className='project-title'>Casaam (Solomco) - 2026</div>
+                            <div className="project-description">
+                                Application de gestion pour banques alimentaires
+                            </div>
+                            <div className='project-picture'>
+                                <img src='/casaam.png'></img>
+                            </div>
+                        </div>
+                        <div className="project-techno">
+                            <SkillIcon {...REACT} />
+                            <SkillIcon {...JAVASCRIPT} />
+                            <SkillIcon {...GO} />
+                            <SkillIcon {...TAILWIND} />
+                            <SkillIcon {...SQLITE} />
+                        </div>
+                    </div>
+                </a>
 
                 <a href='https://github.com/MathildeCalon/portfolio'>
                     <div className='project-card'>
