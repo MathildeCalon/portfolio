@@ -152,6 +152,32 @@ export default function Parcours() {
                         </div>
                     </div>
 
+                    <div className='flip-card game-card'>
+                        <div className='life-step'>
+                            <div className='step-dates'>
+                                2026
+                            </div>
+                            <div className='step-description'>
+                                <div className='title-icon'>
+                                    <span className='fa-solid fa-laptop-code' />
+                                </div>
+                                <div className='step-description-details'>
+                                    <div>
+                                        <strong>
+                                            Développeuse web fullstack chez Solomco</strong>
+                                    </div>
+                                    <div className='description-details'>Développement d'applications à destination des banques alimentaires et associations</div>
+                                    <div className='skills-list'>
+                                        <div><span className='fa-solid fa-arrow-right' /> React</div>
+                                        <div><span className='fa-solid fa-arrow-right' /> Go</div>
+                                        <div><span className='fa-solid fa-arrow-right' /> SQLite</div>
+                                        <div><span className='fa-solid fa-arrow-right' /> Tailwind</div>
+                                        <div><span className='fa-solid fa-arrow-right' /> Tortoise SVN</div>
+                                        <div><span className='fa-solid fa-arrow-right' /> Trello</div></div>
+                                </div></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>
