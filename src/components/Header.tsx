@@ -19,7 +19,7 @@ export default function Presentation(){
                 </div>
 
                 <div id='avatar'>
-                    <img src='avatar_portfolio.png' alt='avatar de Mathilde'></img>
+                    <img src='409E7B76-147A-4EF2-AA41-AB828B8ADA33.png' alt='avatar de Mathilde'></img>
                 </div>
             </div>
 
